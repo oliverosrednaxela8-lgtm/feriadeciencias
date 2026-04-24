@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Especial</title> <!-- Título gancho en el navegador -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pantalla de intriga/gancho -->
+    <div id="bait-screen" class="screen">
+        <h1 class="blink">Procesando código QR...</h1>
+        <p class="subtitle">Obteniendo información del dispositivo</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+    </div>
+    
+    <!-- Pantalla de impacto -->
+    <div id="hacked-screen" class="screen hidden">
+        <div class="glitch-wrapper">
+            <!-- Usamos atributos data-text para el efecto glitch -->
+            <h1 class="glitch hacker-text" data-text="############################################">############################################</h1>
+            <h1 class="glitch hacker-text" data-text="¡FELICIDADES!">¡FELICIDADES!</h1>
+            <h2 class="glitch hacker-subtext" data-text="AHORA TUS DATOS ESTÁN EN LA DEEP WEB">AHORA TUS DATOS ESTÁN EN LA DEEP WEB</h2>
+            <h1 class="glitch hacker-text" data-text="############################################">############################################</h1>
+        </div>
+        
+        <!-- Mensaje educativo -->
+        <div class="educational-message">
+            <p>Tranquilo/a, esto es solo una <strong>simulación</strong>.</p>
+            <p>
+                El propósito de esta actividad no es causar miedo, sino ilustrar un punto crítico en el mundo digital: 
+                <strong>no debemos acceder a cualquier enlace web o escanear códigos QR que nos den fácilmente en la calle o internet.</strong>
+            </p>
+            <p>
+                Hoy fue solo una pantalla inofensiva, pero mañana podría ser un fraude real. 
+                Tu información personal es valiosa. <span class="highlight">¡Protégela!</span>
+            </p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
